@@ -1,0 +1,16 @@
+footer {
+  padding: 2rem 0;
+  background-color: rgba(0,0,0,1);
+  color: $bg_color;
+  text-align: center;
+  font-size: 1.5rem;
+
+  p { text-align: center; }
+
+ .button { margin-top: 0.5rem; }
+
+ a {
+   border-bottom: 1px solid $bg_color;
+   &:hover{color: $white; border-color: $white;}
+  }
+}

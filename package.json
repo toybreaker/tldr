@@ -1,0 +1,26 @@
+{
+  "name": "tldr",
+  "version": "0.0.1",
+  "description": "user guide pill",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toybreaker/tldr.git"
+  },
+  "keywords": [
+    "user-guide",
+    "tldr"
+  ],
+  "author": "toybreaker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toybreaker/tldr/issues"
+  },
+  "homepage": "https://github.com/toybreaker/tldr#readme",
+  "devDependencies": {
+
+  }
+}

@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+//base
+$white:  hsla(211, 70%, 90%, 1);
+$blue_4: hsla(211, 70%, 60%, 1);
+$blue_3: hsla(220, 80%, 60%, 1);
+$blue_25: hsla(225, 85%, 55%, 1);
+$blue_2: hsla(229, 90%, 50%, 1);
+$blue:   hsla(238, 100%, 40%, 1);
+
+$green:       green;
+$text_color:  red;
+$blackgrey:   #161616;
+
+// derivates
+$bg_color: $blue_4;
+$html_bg_color: $blackgrey;
+
+//liquid type
+$html_base_font_size: 16px;
+$liquid_font_base: 2.5vw;
+$liquid_font_small: 1.5vw;
+$liquid_font_med: 3vw;
+//media q
+
+
+
+@import
+"base",
+"cmq",
+"octopal",
+"buttons",
+"images",
+"output",
+"footer",
+"drop"
+;

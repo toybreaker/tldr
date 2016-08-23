@@ -1,0 +1,59 @@
+/* uncss:ignore */
+.run_functions_button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8rem;
+  height: 8rem;
+  margin-top: -4rem;
+  margin-left: -4rem;
+  border: 1px solid $bg_color;
+  border-radius: 50%;
+  color: $bg_color;
+  background-color: #000;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+}
+
+/* uncss:ignore */
+.run_functions_button:hover {
+  -webkit-transform: scale(1.1,  1.1);
+  transform: scale(1.1,  1.1);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+/* uncss:ignore */
+.run_functions_button:active {
+  -webkit-transform: scale(0.9,  0.9);
+  transform: scale(0.9,  0.9);
+}
+
+/* uncss:ignore */
+.run_functions_button.hide {
+    background-color: #000;
+    color: #777;
+    -webkit-transition: -webkit-transform 0.8s, top 0.8s cubic-bezier(0.22,  -0.37,  0.75,  0.75);
+    -webkit-transition: top 0.8s cubic-bezier(0.22,  -0.37,  0.75,  0.75), -webkit-transform 0.8s;
+    transition: top 0.8s cubic-bezier(0.22,  -0.37,  0.75,  0.75), -webkit-transform 0.8s;
+    transition: transform 0.8s, top 0.8s cubic-bezier(0.22,  -0.37,  0.75,  0.75);
+    transition: transform 0.8s, top 0.8s cubic-bezier(0.22,  -0.37,  0.75,  0.75), -webkit-transform 0.8s;
+    top: 105%;
+    -webkit-transform: scale(0,  0);
+    transform: scale(0,  0);
+}
+
+/* uncss:ignore */
+.touch {
+  .touch_label { display: inline; }
+  /* uncss:ignore */
+  .no_touch_label { display: none;  }
+}
+
+/* uncss:ignore */
+.no_touch .no_touch_label { display: inline;}

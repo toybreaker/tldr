@@ -1,0 +1,45 @@
+/* uncss:ignore */
+.example_images{
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
+/* uncss:ignore */
+.image_section {
+  display: block;
+  position: relative;
+  padding: 10rem 0;
+  overflow: hidden;
+}
+
+/* uncss:ignore */
+.image_wrap {
+  position: relative;
+  line-height: 1;
+}
+
+/* uncss:ignore */
+.target_image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+
+
+
+/* uncss:ignore */
+// .examples-section .image-section .target-image {
+// border-bottom-radius: 8px;
+// }
+
+/* uncss:ignore */
+// .examples-section .image-section.with-color-thief-output .target-image {
+// border-bottom-left-radius: 0;
+// border-bottom-right-radius: 0;
+// }
