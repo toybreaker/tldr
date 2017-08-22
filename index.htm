@@ -1,492 +1,498 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>tl;dr meet Rok</title>
+		<title>tl;dr: meet Rokma</title>
 
-	<meta name="description" content="online-business-card, compact presentation page, user-guide-pill">
-	<meta name="author" content="rokma">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="description" content="online-business-card, compact presentation page, user-guide-pill">
+		<meta name="author" content="rokma">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 
-	<!-- http://tldr.rokma.com -->
+		<!-- https://tldr.rokma.com -->
 
-	<style media="screen">
-		html {
-			background-color: #f00;
-			font: caption;
-			font-weight: 200;
-			font-size: calc(6px + 1vw);
-			color: #ff0;
-		}
-
-		@media only screen and (min-width: 341px) {
+		<style media="screen">
 			html {
-				font-size: calc(8px + 1vw);
+				background-color: #f00;
+				font: caption;
+				font-weight: 200;
+				font-size: calc(6px + 1vw);
+				color: #ff0;
 			}
-		}
 
-		@media only screen and (min-width: 671px) {
-			html {
-				font-size: calc(8px + 1vw);
+			@media only screen and (min-width: 341px) {
+				html {
+					font-size: calc(8px + 1vw);
+				}
 			}
-		}
 
-		body {
-			font-size: 1.75rem;
-			padding: 0;
-			margin: 0;
-			text-transform: uppercase;
-		}
-
-		h1,
-		h2 {
-			display: block;
-			margin: 0 auto;
-		}
-
-		.wrap {
-			width: 100vw;
-			height: 100vh;
-			min-width: 100vw;
-			min-height: 100vh;
-			display: -webkit-box;
-			display: -webkit-flex;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			-webkit-flex-direction: column;
-			-ms-flex-direction: column;
-			flex-direction: column;
-			-webkit-box-align: stretch;
-			-webkit-align-items: stretch;
-			-ms-flex-align: stretch;
-			-ms-grid-row-align: stretch;
-			align-items: stretch;
-			-webkit-box-pack: center;
-			-webkit-justify-content: center;
-			-ms-flex-pack: center;
-			justify-content: center;
-		}
-
-		.screen {
-			display: -webkit-box;
-			display: -webkit-flex;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			-webkit-flex-direction: column;
-			-ms-flex-direction: column;
-			flex-direction: column;
-			-webkit-box-align: stretch;
-			-webkit-align-items: stretch;
-			-ms-flex-align: stretch;
-			-ms-grid-row-align: stretch;
-			align-items: stretch;
-			-webkit-box-pack: center;
-			-webkit-justify-content: center;
-			-ms-flex-pack: center;
-			justify-content: center;
-			text-align: center;
-			overflow: hidden;
-			height: 50vh;
-		}
-
-		.benefits {
-			color: #000;
-			min-width: 50vw;
-			background-color: #000;
-		}
-
-		.drawbacks {
-			color: #fff;
-			background-color: #fff;
-			min-width: 50vw;
-		}
-
-		.benefits:after {
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 50vh;
-			background-color: #fff;
-			border-top-left-radius: 0;
-			border-top-right-radius: 0;
-			border-bottom-left-radius: 33%;
-			border-bottom-right-radius: 0;
-			/* Prevent background color leak outs */
--webkit-background-clip: padding-box;
--moz-background-clip:    padding;
-background-clip:         padding-box;
-		}
-
-		.drawbacks:after {
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 50vh;
-			background-color: #000;
-			border-top-left-radius: 0;
-			border-top-right-radius: 33%;
-			border-bottom-left-radius: 0;
-			border-bottom-right-radius: 0;
-			/* Prevent background color leak outs */
--webkit-background-clip: padding-box;
--moz-background-clip:    padding;
-background-clip:         padding-box;
-		}
-
-		@media only screen and (orientation: landscape) {
-			.screen {
-				height: 100vh;
+			@media only screen and (min-width: 671px) {
+				html {
+					font-size: calc(8px + 1vw);
+				}
 			}
-			.benefits:after {
-				width: 50vw;
-				height: 100%;
-				border-top-left-radius: 0;
-				border-top-right-radius: 33%;
-				border-bottom-left-radius: 0;
-				border-bottom-right-radius: 0;
+
+			body {
+				font-size: 1.75rem;
+				padding: 0;
+				margin: 0;
+				text-transform: uppercase;
 			}
-			.drawbacks:after {
-				width: 50vw;
-				height: 100%;
-				border-top-left-radius: 0;
-				border-top-right-radius: 0;
-				border-bottom-left-radius: 33%;
-				border-bottom-right-radius: 0;
+
+			h1,
+			h2 {
+				display: block;
+				margin: 0 auto;
 			}
+
 			.wrap {
-				-webkit-box-orient: horizontal;
+				width: 100vw;
+				height: 100vh;
+				min-width: 100vw;
+				min-height: 100vh;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: vertical;
 				-webkit-box-direction: normal;
-				-webkit-flex-direction: row;
-				-ms-flex-direction: row;
-				flex-direction: row;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
 				-webkit-box-align: stretch;
 				-webkit-align-items: stretch;
 				-ms-flex-align: stretch;
 				-ms-grid-row-align: stretch;
 				align-items: stretch;
-			}
-		}
-
-		.hide {
-			display: none;
-		}
-
-		p {
-			margin: 0;
-			padding: 0;
-			position: relative;
-			z-index: 10;
-		}
-
-		.detail {
-			position: relative;
-			z-index: 1;
-			padding: 0 4rem;
-			font-size: 60%;
-			position: relative;
-			z-index: 1;
-		}
-
-		.detail.fb {
-			padding: 0;
-			font-size: 1.5rem;
-			line-height: 1.1;
-			position: relative;
-			z-index: 10;
-			padding-top: .25rem;
-			padding-bottom: .25rem;
-			margin-left: 5vw;
-			margin-right: 5vw;
-		}
-
-		.hover:hover {
-			cursor: pointer;
-		}
-
-		.showing_fb .detail:not(.fb) {
-			display: none;
-		}
-
-		.showing_fb p {
-			display: none;
-		}
-
-		.showing_fb .wrap {
-			pointer-events: none;
-		}
-
-		.fb_button {
-			position: absolute;
-			top: 1rem;
-			left: 1rem;
-			z-index: 1000;
-			height: 30px;
-			width: 30px;
-		}
-
-		.fb_button svg {
-			display: block;
-		}
-
-		.mask {
-			display: none;
-		}
-
-		.showing_fb .mask {
-			background-color: rgba(59, 89, 152, .5);
-			display: block;
-			position: fixed;
-			z-index: 1001;
-			height: 100%;
-			width: 100%;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-		}
-
-		.showing_fb .first {
-			display: none;
-		}
-	</style>
-
-</head>
-
-<body class="">
-
-	<a class="mask" href="/"></a>
-
-	<div class="wrap" id="wrap">
-
-		<section id="plus" class="screen benefits">
-
-			<div class="1 hover" id="1">
-				<p>quick</p>
-				<div class="detail first hide">towards producing solutions.</div>
-				<div class="detail fb hide">I like others.</div>
-			</div>
-
-			<div class="2 hover" id="2">
-				<p>expert</p>
-				<div class="detail first hide">in communication, photography, visual arts, self-teaching.</div>
-				<div class="detail fb hide">I like to paint with words.</div>
-			</div>
-
-			<div class="3 hover" id="3">
-				<p>articulate</p>
-				<div class="detail first hide">with many visual languages.</div>
-				<div class="detail fb hide">I like when I can talk with photos.</div>
-			</div>
-
-			<div class="4 hover" id="4">
-				<p>up to date</p>
-				<div class="detail first hide">with contemporary visual media engineering solutions.</div>
-				<div class="detail fb hide">I like meaning is silent</div>
-			</div>
-
-			<div class="5 hover" id="5">
-				<p>patient</p>
-				<div class="detail first hide">with kids of all ages.</div>
-				<div class="detail fb hide">I like learning from kids!</div>
-			</div>
-
-		</section>
-
-		<section id="minus" class="screen drawbacks">
-
-			<div class="6 hover" id="6">
-				<p>strict</p>
-				<div class="detail first hide">really strict about payments.</div>
-				<div class="detail fb hide">I like asking pay only once.</div>
-			</div>
-
-			<div class="7 hover" id="7">
-				<p>result driven</p>
-				<div class="detail first hide">loose interest quickly when client is not conducive to get things done.</div>
-				<div class="detail fb hide">I like results.</div>
-			</div>
-
-			<div class="8 hover" id="8">
-				<p>need feedback</p>
-				<div class="detail first hide">loose interest quickly when client is not conducive to dialog.</div>
-				<div class="detail fb hide">I like feedback.</div>
-			</div>
-
-			<div class="9 hover" id="9">
-				<p>impatient</p>
-				<div class="detail first hide">with adults, rude and arrogant attitudes, talk-and-dont-listen approach, affirmative speak from mount-stupid and when actions dont follow words.</div>
-				<div class="detail fb hide">I like moving on. </div>
-			</div>
-
-			<div class="10 hover" id="10">
-				<p class=" ">d.r.y.</p>
-				<div class="detail first hide">"Dont Repeat Yourself" motto victim.</div>
-
-				<div class="detail fb hide">I like to skip repetition.</div>
-			</div>
-
-		</section>
-
-	</div>
-
-
-	<div class="fb_button" id="fb">
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
-			<title>Logo: Facebook</title>
-			<path fill="#aaa" d="M26.4 0H2.6C1.714 0 0 1.715 0 2.6v23.8c0 .884 1.715 2.6 2.6 2.6h12.393V17.988h-3.996v-3.98h3.997v-3.062c0-3.746 2.835-5.97 6.177-5.97 1.6 0 2.444.173 2.845.226v3.792H21.18c-1.817 0-2.156.9-2.156 2.168v2.847h5.045l-.66 3.978h-4.386V29H26.4c.884 0 2.6-1.716 2.6-2.6V2.6c0-.885-1.716-2.6-2.6-2.6z"
-			/>
-		</svg>
-	</div>
-
-	<script type="text/javascript">
-		/* code that SPEAKs: toggle stuff */
-
-		function toggleClass(element, className) {
-			if (!element || !className) {
-				return;
+				-webkit-box-pack: center;
+				-webkit-justify-content: center;
+				-ms-flex-pack: center;
+				justify-content: center;
 			}
 
-			var classString = element.className,
-				nameIndex = classString.indexOf(className);
-			if (nameIndex == -1) {
-				classString += ' ' + className;
-			} else {
-				classString = classString.substr(0, nameIndex) + classString.substr(nameIndex + className.length);
-			}
-			element.className = classString;
-		}
-
-
-
-		document.getElementById('1').addEventListener('click', function() {
-
-			var targetDiv = document.getElementById("1").getElementsByClassName("detail")[0];
-
-			toggleClass(targetDiv, 'hide');
-			toggleClass(document.body, 'showing_detail');
-
-		})
-
-		document.getElementById('2').addEventListener('click', function() {
-
-			var targetDiv = document.getElementById("2").getElementsByClassName("detail")[0];
-
-			toggleClass(targetDiv, 'hide');
-			toggleClass(document.body, 'showing_detail');
-
-		})
-
-		document.getElementById('3').addEventListener('click', function() {
-
-			var targetDiv = document.getElementById("3").getElementsByClassName("detail")[0];
-
-			toggleClass(targetDiv, 'hide');
-			toggleClass(document.body, 'showing_detail');
-
-		})
-
-		document.getElementById('4').addEventListener('click', function() {
-
-			var targetDiv = document.getElementById("4").getElementsByClassName("detail")[0];
-
-			toggleClass(targetDiv, 'hide');
-			toggleClass(document.body, 'showing_detail');
-
-		})
-
-		document.getElementById('5').addEventListener('click', function() {
-
-			var targetDiv = document.getElementById("5").getElementsByClassName("detail")[0];
-
-			toggleClass(targetDiv, 'hide');
-			toggleClass(document.body, 'showing_detail');
-
-		})
-
-		document.getElementById('6').addEventListener('click', function() {
-
-			var targetDiv = document.getElementById("6").getElementsByClassName("detail")[0];
-
-			toggleClass(targetDiv, 'hide');
-			toggleClass(document.body, 'showing_detail');
-
-		})
-
-		document.getElementById('7').addEventListener('click', function() {
-
-			var targetDiv = document.getElementById("7").getElementsByClassName("detail")[0];
-
-			toggleClass(targetDiv, 'hide');
-			toggleClass(document.body, 'showing_detail');
-
-		})
-
-		document.getElementById('8').addEventListener('click', function() {
-
-			var targetDiv = document.getElementById("8").getElementsByClassName("detail")[0];
-
-			toggleClass(targetDiv, 'hide');
-			toggleClass(document.body, 'showing_detail');
-
-		})
-
-		document.getElementById('9').addEventListener('click', function() {
-
-			var targetDiv = document.getElementById("9").getElementsByClassName("detail")[0];
-
-			toggleClass(targetDiv, 'hide');
-			toggleClass(document.body, 'showing_detail');
-
-		})
-
-		document.getElementById('10').addEventListener('click', function() {
-
-			var targetDiv = document.getElementById("10").getElementsByClassName("detail")[0];
-
-			toggleClass(targetDiv, 'hide');
-			toggleClass(document.body, 'showing_detail');
-
-		})
-
-
-		// fb
-		document.getElementById('fb').addEventListener('click', function() {
-
-			var targetDiv = document.getElementsByClassName("fb");
-
-			for (i = 0; i < targetDiv.length; i++) {
-
-				targetDiv[i].style.display = "block";
-
+			.screen {
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				-webkit-box-align: stretch;
+				-webkit-align-items: stretch;
+				-ms-flex-align: stretch;
+				-ms-grid-row-align: stretch;
+				align-items: stretch;
+				-webkit-box-pack: center;
+				-webkit-justify-content: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				text-align: center;
+				overflow: hidden;
+				height: 50vh;
 			}
 
-			toggleClass(document.body, 'showing_fb');
+			.benefits {
+				color: #000;
+				min-width: 50vw;
+				background-color: #000;
+			}
 
-		})
-	</script>
+			.drawbacks {
+				color: #fff;
+				background-color: #fff;
+				min-width: 50vw;
+			}
 
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			.benefits:after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 50vh;
+				background-color: #fff;
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+				border-bottom-left-radius: 33%;
+				border-bottom-right-radius: 0;
+				/* Prevent background color leak outs */
+				-webkit-background-clip: padding-box;
+				-moz-background-clip: padding;
+				background-clip: padding-box;
+			}
 
-	  ga('create', 'UA-83735816-1', 'auto');
-	  ga('send', 'pageview');
+			.drawbacks:after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 50vh;
+				background-color: #000;
+				border-top-left-radius: 0;
+				border-top-right-radius: 33%;
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+				/* Prevent background color leak outs */
+				-webkit-background-clip: padding-box;
+				-moz-background-clip: padding;
+				background-clip: padding-box;
+			}
 
-	</script>
+			@media only screen and (orientation: landscape) {
+				.screen {
+					height: 100vh;
+				}
+				.benefits:after {
+					width: 50vw;
+					height: 100%;
+					border-top-left-radius: 0;
+					border-top-right-radius: 33%;
+					border-bottom-left-radius: 0;
+					border-bottom-right-radius: 0;
+				}
+				.drawbacks:after {
+					width: 50vw;
+					height: 100%;
+					border-top-left-radius: 0;
+					border-top-right-radius: 0;
+					border-bottom-left-radius: 33%;
+					border-bottom-right-radius: 0;
+				}
+				.wrap {
+					-webkit-box-orient: horizontal;
+					-webkit-box-direction: normal;
+					-webkit-flex-direction: row;
+					-ms-flex-direction: row;
+					flex-direction: row;
+					-webkit-box-align: stretch;
+					-webkit-align-items: stretch;
+					-ms-flex-align: stretch;
+					-ms-grid-row-align: stretch;
+					align-items: stretch;
+				}
+			}
 
-</body>
+			.hide {
+				display: none;
+			}
+
+			p {
+				margin: 0;
+				padding: 0;
+				position: relative;
+				z-index: 10;
+			}
+
+			.detail {
+				position: relative;
+				z-index: 1;
+				padding: 0 4rem;
+				font-size: 60%;
+				position: relative;
+				z-index: 1;
+			}
+
+			.detail.fb {
+				padding: 0;
+				font-size: 1.5rem;
+				line-height: 1.1;
+				position: relative;
+				z-index: 10;
+				padding-top: .25rem;
+				padding-bottom: .25rem;
+				margin-left: 5vw;
+				margin-right: 5vw;
+			}
+
+			.hover:hover {
+				cursor: pointer;
+			}
+
+			.showing_fb .detail:not(.fb) {
+				display: none;
+			}
+
+			.showing_fb p {
+				display: none;
+			}
+
+			.showing_fb .wrap {
+				pointer-events: none;
+			}
+
+			.fb_button {
+				position: absolute;
+				top: 1rem;
+				left: 1rem;
+				z-index: 1000;
+				height: 30px;
+				width: 30px;
+			}
+
+			.fb_button svg {
+				display: block;
+			}
+
+			.mask {
+				display: none;
+			}
+
+			.showing_fb .mask {
+				background-color: rgba(59, 89, 152, .5);
+				display: block;
+				position: fixed;
+				z-index: 1001;
+				height: 100%;
+				width: 100%;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+
+			.showing_fb .first {
+				display: none;
+			}
+		</style>
+
+	</head>
+
+	<body class="">
+
+		<a class="mask" href="/"></a>
+
+		<div class="wrap" id="wrap">
+
+			<section id="plus" class="screen benefits">
+
+				<div class="1 hover" id="1">
+					<p>quick</p>
+					<div class="detail first hide">towards producing solutions.</div>
+					<div class="detail fb hide">I like others.</div>
+				</div>
+
+				<div class="2 hover" id="2">
+					<p>expert</p>
+					<div class="detail first hide">in communication, photography, visual arts, self-teaching.</div>
+					<div class="detail fb hide">I like to paint with words.</div>
+				</div>
+
+				<div class="3 hover" id="3">
+					<p>articulate</p>
+					<div class="detail first hide">with many visual languages.</div>
+					<div class="detail fb hide">I like when I can talk with photos.</div>
+				</div>
+
+				<div class="4 hover" id="4">
+					<p>up to date</p>
+					<div class="detail first hide">with contemporary visual media engineering solutions.</div>
+					<div class="detail fb hide">I like meaning is silent</div>
+				</div>
+
+				<div class="5 hover" id="5">
+					<p>patient</p>
+					<div class="detail first hide">with kids of all ages.</div>
+					<div class="detail fb hide">I like learning from kids!</div>
+				</div>
+
+			</section>
+
+			<section id="minus" class="screen drawbacks">
+
+				<div class="6 hover" id="6">
+					<p>strict</p>
+					<div class="detail first hide">really strict about payments.</div>
+					<div class="detail fb hide">I like asking pay only once.</div>
+				</div>
+
+				<div class="7 hover" id="7">
+					<p>result driven</p>
+					<div class="detail first hide">loose interest quickly when client is not conducive to get things done.</div>
+					<div class="detail fb hide">I like results.</div>
+				</div>
+
+				<div class="8 hover" id="8">
+					<p>need feedback</p>
+					<div class="detail first hide">loose interest quickly when client is not conducive to dialog.</div>
+					<div class="detail fb hide">I like feedback.</div>
+				</div>
+
+				<div class="9 hover" id="9">
+					<p>impatient</p>
+					<div class="detail first hide">with adults, rude and arrogant attitudes, talk-and-dont-listen approach, affirmative speak from mount-stupid and when actions dont follow words.</div>
+					<div class="detail fb hide">I like moving on. </div>
+				</div>
+
+				<div class="10 hover" id="10">
+					<p class=" ">d.r.y.</p>
+					<div class="detail first hide">"Dont Repeat Yourself" motto victim.</div>
+
+					<div class="detail fb hide">I like to skip repetition.</div>
+				</div>
+
+			</section>
+
+		</div>
+
+
+		<div class="fb_button" id="fb">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+				<title>Logo: Facebook</title>
+				<path fill="#aaa" d="M26.4 0H2.6C1.714 0 0 1.715 0 2.6v23.8c0 .884 1.715 2.6 2.6 2.6h12.393V17.988h-3.996v-3.98h3.997v-3.062c0-3.746 2.835-5.97 6.177-5.97 1.6 0 2.444.173 2.845.226v3.792H21.18c-1.817 0-2.156.9-2.156 2.168v2.847h5.045l-.66 3.978h-4.386V29H26.4c.884 0 2.6-1.716 2.6-2.6V2.6c0-.885-1.716-2.6-2.6-2.6z"
+				/>
+			</svg>
+		</div>
+
+		<script type="text/javascript">
+			/* code that SPEAKs: toggle stuff */
+
+			function toggleClass(element, className) {
+				if (!element || !className) {
+					return;
+				}
+
+				var classString = element.className,
+					nameIndex = classString.indexOf(className);
+				if (nameIndex == -1) {
+					classString += ' ' + className;
+				} else {
+					classString = classString.substr(0, nameIndex) + classString.substr(nameIndex + className.length);
+				}
+				element.className = classString;
+			}
+
+
+
+			document.getElementById('1').addEventListener('click', function() {
+
+				var targetDiv = document.getElementById("1").getElementsByClassName("detail")[0];
+
+				toggleClass(targetDiv, 'hide');
+				toggleClass(document.body, 'showing_detail');
+
+			})
+
+			document.getElementById('2').addEventListener('click', function() {
+
+				var targetDiv = document.getElementById("2").getElementsByClassName("detail")[0];
+
+				toggleClass(targetDiv, 'hide');
+				toggleClass(document.body, 'showing_detail');
+
+			})
+
+			document.getElementById('3').addEventListener('click', function() {
+
+				var targetDiv = document.getElementById("3").getElementsByClassName("detail")[0];
+
+				toggleClass(targetDiv, 'hide');
+				toggleClass(document.body, 'showing_detail');
+
+			})
+
+			document.getElementById('4').addEventListener('click', function() {
+
+				var targetDiv = document.getElementById("4").getElementsByClassName("detail")[0];
+
+				toggleClass(targetDiv, 'hide');
+				toggleClass(document.body, 'showing_detail');
+
+			})
+
+			document.getElementById('5').addEventListener('click', function() {
+
+				var targetDiv = document.getElementById("5").getElementsByClassName("detail")[0];
+
+				toggleClass(targetDiv, 'hide');
+				toggleClass(document.body, 'showing_detail');
+
+			})
+
+			document.getElementById('6').addEventListener('click', function() {
+
+				var targetDiv = document.getElementById("6").getElementsByClassName("detail")[0];
+
+				toggleClass(targetDiv, 'hide');
+				toggleClass(document.body, 'showing_detail');
+
+			})
+
+			document.getElementById('7').addEventListener('click', function() {
+
+				var targetDiv = document.getElementById("7").getElementsByClassName("detail")[0];
+
+				toggleClass(targetDiv, 'hide');
+				toggleClass(document.body, 'showing_detail');
+
+			})
+
+			document.getElementById('8').addEventListener('click', function() {
+
+				var targetDiv = document.getElementById("8").getElementsByClassName("detail")[0];
+
+				toggleClass(targetDiv, 'hide');
+				toggleClass(document.body, 'showing_detail');
+
+			})
+
+			document.getElementById('9').addEventListener('click', function() {
+
+				var targetDiv = document.getElementById("9").getElementsByClassName("detail")[0];
+
+				toggleClass(targetDiv, 'hide');
+				toggleClass(document.body, 'showing_detail');
+
+			})
+
+			document.getElementById('10').addEventListener('click', function() {
+
+				var targetDiv = document.getElementById("10").getElementsByClassName("detail")[0];
+
+				toggleClass(targetDiv, 'hide');
+				toggleClass(document.body, 'showing_detail');
+
+			})
+
+
+			// fb
+			document.getElementById('fb').addEventListener('click', function() {
+
+				var targetDiv = document.getElementsByClassName("fb");
+
+				for (i = 0; i < targetDiv.length; i++) {
+
+					targetDiv[i].style.display = "block";
+
+				}
+
+				toggleClass(document.body, 'showing_fb');
+
+			})
+		</script>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-83735816-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+
+	</body>
 
 </html>
