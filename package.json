@@ -1,14 +1,10 @@
 {
   "name": "tldr",
-  "version": "0.0.1",
-  "description": "user guide pill",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "0.1.0",
+  "description": "pill size biz card website, straight to the point.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/toybreaker/tldr.git"
+    "url": "https://github.com/toybreaker/tldr.git"
   },
   "keywords": [
     "user-guide",
@@ -20,7 +16,5 @@
     "url": "https://github.com/toybreaker/tldr/issues"
   },
   "homepage": "https://github.com/toybreaker/tldr#readme",
-  "devDependencies": {
-
-  }
+  "devDependencies": {}
 }
