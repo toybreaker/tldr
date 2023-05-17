@@ -1,6 +1,6 @@
 {
-  "name": "tldr",
-  "version": "0.1.0",
+  "name": "rokma-tldr",
+  "version": "1.0.1",
   "description": "pill size biz card website, straight to the point.",
   "repository": {
     "type": "git",
